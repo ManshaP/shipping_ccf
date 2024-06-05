@@ -1,0 +1,14 @@
+#!/bin/bash 
+#SBATCH --partition=high-mem
+#SBATCH -o slurm_out/%A_%a.out
+#SBATCH -e slurm_out/%A_%a.err
+#SBATCH --time=1-00:00:00
+#SBATCH --array=2014-2019,2021
+#SBATCH --nodes=1                    # Run all processes on a single node
+#SBATCH --ntasks=1                   # Run a single task
+#SBATCH --cpus-per-task=1           # Number of CPU cores per task
+#SBATCH --mem=256000
+
+# executable 
+
+/home/users/pete_nut/miniconda3/envs/petes_env/bin/python /home/users/pete_nut/ccf/process_cloud_properties.py ${SLURM_ARRAY_TASK_ID} null
