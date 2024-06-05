@@ -17,12 +17,11 @@ def albedo(COT):
     a=COT/((4/3 /0.15) + COT)
     return a
 
-# files_n = glob.glob('/gws/nopw/j04/eo_shared_data_vol1/satellite/modistracks/nnull/20??/null_??_par')
 year=sys.argv[1]
 nullarg=sys.argv[2]
 null = (nullarg=='null')
 if null: 
-    files = glob.glob('/gws/nopw/j04/eo_shared_data_vol1/satellite/modistracks/nnull/20??/null_??_par')
+    files = glob.glob(f'/gws/nopw/j04/eo_shared_data_vol1/satellite/modistracks/nnull/{year}/null_??_par')
     savepath = '/gws/nopw/j04/eo_shared_data_vol2/scratch/pete_nut/reanalysis_data/ERA5/regression_vars/coarsened/n_'
 
 else:

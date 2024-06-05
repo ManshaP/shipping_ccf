@@ -11,4 +11,4 @@
 
 # executable 
 
-/home/users/pete_nut/miniconda3/envs/petes_env/bin/python /home/users/pete_nut/ccf/process_cloud_properties.py ${SLURM_ARRAY_TASK_ID} null
+/home/users/pete_nut/miniconda3/envs/petes_env/bin/python /home/users/pete_nut/shipping_ccf/process_cloud_properties.py ${SLURM_ARRAY_TASK_ID} null

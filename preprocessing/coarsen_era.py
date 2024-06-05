@@ -53,4 +53,4 @@ def coarsen_year(year):
     
 # with Pool(4) as p:
     # p.map(coarsen_year, ['2015','2016','2021',]) #'2014','2017','2018','2019'
-coarsen_year('2021')
+coarsen_year('2016')

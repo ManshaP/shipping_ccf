@@ -1,3 +1,0 @@
-terminate called after throwing an instance of 'std::system_error'
-  what():  Resource temporarily unavailable
-/var/spool/slurmd/job32752616/slurm_script: line 14: 21767 Aborted                 /home/users/pete_nut/miniconda3/envs/petes_env/bin/python /home/users/pete_nut/ccf/process_cloud_properties.py ${SLURM_ARRAY_TASK_ID} null

@@ -1,2 +1,0 @@
-ERROR; return code from pthread_create() is 11
-	Error detail: Resource temporarily unavailable
