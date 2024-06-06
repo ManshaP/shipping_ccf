@@ -16,7 +16,7 @@ def date(x):
     return x.date()
 
 def coarsen_year(year): 
-    era_filepath = '/gws/nopw/j04/eo_shared_data_vol2/scratch/pete_nut/reanalysis_data/ERA5/regression_vars/EIS'
+    era_filepath = '/gws/nopw/j04/eo_shared_data_vol2/scratch/pete_nut/reanalysis_data/ERA5/regression_vars/T_adv'
     savepath = '/gws/nopw/j04/eo_shared_data_vol2/scratch/pete_nut/reanalysis_data/ERA5/regression_vars/'
     dtypes = {'latitude':np.float32, 'longitude':np.float32, 'r_eff':np.float32, 'npoints':np.float32, 'LWP':np.float32, 'COT':np.float32,
                         'CTH':np.float32, 'signal':np.float32,  'particle':np.int32, 'latitude_1':np.float32, 'longitude_1':np.float32,
